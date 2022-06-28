@@ -40,4 +40,17 @@ $ sudo apt install python3 python3-pip python3.9-venv python3.9-dev python3-poet
    $ pip install -r requirements.txt # if using pip
    $ poetry install # if using poetry
     ```
+3. Run the application 
+    ```shell
+   $ python3 -m multilayer_perceptron_classification
+    ```
+4. (Optionally) You can also define some cli parameters to control the batch size, the number of epochs 
+or whether to save the model to file. To do so, you can run the application like so
+   ```shell
+   $ python3 -m multilayer_perceptron_classification --batch-size=N --epochs=M --save
+   ```
+5. (Optionally) You can also create a yaml file with the aforementioned parameters and just run the application like
+   ```shell
+   $ python3 -m multilayer_perceptron_classification -f <file_name>.yaml
+   ```
 
